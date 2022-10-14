@@ -27,3 +27,37 @@ Encryption Key  - Key used to scramble the data
 
 ```
 
+APPLICATIONS OF CRYPTOGRAPHY
+------------------------------------------
+```
+1. SSL/TLS
+2. Digital Signatures
+3. Safe Online Banking
+4. Secure Chatting Services
+5. Encrypted Emails
+6. Crypto-currency
+```
+
+TYPES OF ENCRYPTION IN CRYPTOGRAPHY
+------------------------------------------
+```
+1. Symmetric Key Cryptography
+2. Asymmetric Key Cryptography
+```
+
+SYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+Symmetric key Cryptography relies on a single key for encrypting and decrypting the information. The key needs to be kept secret and be available to both the sender and receiver. Strength of encryption depends on the key size being used.
+
+The secret key should not be sent along with the cipher text to the receiver.
+Key exchange can be done beefore hand using other algorithms.
+```
+
+APPLICATIONS OF SYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. Banking applications to authenticate ID and transctions
+2. Server/Data Center information can be encrypted at rest
+3. HTTPS encryption with secure all-around browsing
+```
