@@ -68,8 +68,17 @@ DISADVANTAGES OF SYMMETRIC KEY CRYPTOGRAPHY
 1. Same key for encryption and decryption means single point of failure.
 2. Key needs to be always kept secret.
 3. Receiver / Third party can also generate messages with the same key, so authentication issue will arise should secret key is leaked.
-
 ```
+
+ADVANTAGES OF SYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. Faster than Asymmetric.
+2. Better performance metrics.
+3. Optimized for bulk amounts of data
+4. Easier to set up and implement
+```
+
 
 PRIVATE-KEY CRYPTOGRAPHY VS PUBLIC-KEY CRYPTOGRAPHY
 ------------------------------------------
@@ -102,7 +111,7 @@ Features:
 BLOCK CIPHERS
 ------------------------------------------
 ```
-Block ciphers are the algorithms that break down information into chunks of fixed size and encrypt those blocks/chunks.
+Block ciphers are the algorithms that break down information into chunks of fixed size and encrypt those chunks/blocks.
 
 Features:
 1. Infromation is broken down into chunks/blocks of fixed size.
@@ -112,3 +121,32 @@ Features:
 
 Block ciphers are slower, but they are more tamper proof.
 ```
+
+ASYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+Asymmetric Key Cryptography is a cryptographic method which uses two different keys for encryption and decryption. The key used for encryption is the public key while the key used for decryption is the private key.
+
+The pair of keys must belong to the receiver of the message.
+```
+
+
+APPLICATIONS OF ASYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. Digital signatures to maintain authenticity of documents.
+2. Managing crypto-currency transactions securely.
+3. Encryptd browsing sessions for better protection against hackers.
+4. Sharing keys for symmetric key cryptography.
+```
+
+ADVANTAGES OF ASYMMETRIC OVER SYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. No need for sharng secret keys - the key that can be shared cannot decrypt any information, and the only key that can decrypt doesn't need to be shared.
+2. Longer key lenghts mean stronger encryption.
+3. proof of owner's authenticity.
+4. Data can't be modified.
+```
+
+
