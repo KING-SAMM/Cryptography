@@ -61,3 +61,20 @@ APPLICATIONS OF SYMMETRIC KEY CRYPTOGRAPHY
 2. Server/Data Center information can be encrypted at rest
 3. HTTPS encryption with secure all-around browsing
 ```
+
+DISADVANTAGES OF SYMMETRIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. Same key for encryption and decryption means single point of failure.
+2. Key needs to be always kept secret.
+3. Receiver / Third party can also generate messages with the same key, so authentication issue will arise should secret key is leaked.
+
+```
+
+PRIVATE-KEY CRYPTOGRAPHY VS PUBLIC-KEY CRYPTOGRAPHY
+------------------------------------------
+```
+Symmetric key cryptography is also termed Private-Key Cryptography since a big part of the data's integrity is riding on the promise that the users can keep the key secret.
+
+Asymmetric key cryptography is termed public key cryptography because it has two different keys at play, one of which is public.
+```
