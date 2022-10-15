@@ -78,3 +78,37 @@ Symmetric key cryptography is also termed Private-Key Cryptography since a big p
 
 Asymmetric key cryptography is termed public key cryptography because it has two different keys at play, one of which is public.
 ```
+
+TYPES OF ENCRYTION IN SYMMETERIC KEY CRYPTOGRAPHY
+------------------------------------------
+```
+1. Stream Ciphers
+2. Block Ciphers
+```
+
+STREAM CIPHERS
+------------------------------------------
+```
+Stream ciphers are the algorithms that encrypt basic information one bit/byte at a time.
+
+Features:
+1. Encrytion is done one bit/byte at a time
+2. Quicker format of encryption
+3. Data is converted to binary digits and encrypted sequentially
+4. Popular algorithms are RC4, Salsa20
+```
+
+
+BLOCK CIPHERS
+------------------------------------------
+```
+Block ciphers are the algorithms that break down information into chunks of fixed size and encrypt those blocks/chunks.
+
+Features:
+1. Infromation is broken down into chunks/blocks of fixed size.
+2. Size of block depends on key size or exact cipher used e.g a 128-bit block cipher will break the plain text into blocks of 128 bits eack, and encrypt those blocks instead of a single digit
+3. The chunks are encrypted and later chained together
+4. Popular algorithms are AES, DES, 3DES
+
+Block ciphers are slower, but they are more tamper proof.
+```
