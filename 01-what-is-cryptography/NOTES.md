@@ -161,6 +161,13 @@ HASH FUNCTION
 ------------------------------------------
 ```
 A hash function is an algorithm that performs Mathematical operations in the main plain text.
+
+- A hash function is a set of Mathematical operations carried out on two blocks of data.
+- Both blocks are created by dividing the initial input into equal parts
+- The block size is dependent on the algorithm being used
+- The digest size is dependent on the algorithm being used e.g MD5 has a digest size of 128 bits, SHA-256 a digest size of 256 bits
+- Irreversible by design (NOTE: Some algorithms, like md5 have been compromised)
+- Can be carried out multiple times, but the final digest must be consistent for the same input
 ```
 
 REAL WORLD IMPLEMENTATION OF HASHING
@@ -181,4 +188,56 @@ When a file is uploaded on the internet, the file's hash value is generated and 
 When a new user downloads the file, he can calculate the digest of the dowloaded file using the same hash function.
 
 When the hash values are compared, if they match, then fiile integrity has been maintained and theren has been no data corruption.
+```
+
+HASHING GUIDELINES
+------------------------------------------
+```
+1. The hash function must be fast, but not instantaneous
+- Should be able to hash en-mass within a reasonable time limit to prevent exploitation
+- Ultra quick algorithms can be tested vigorously for brute force attacks
+- With enough brute force attacks, not just the hash, but the entire algorithm can be cracked
+
+2. Hash digest must be dependent on each bit
+- If a single character chages, a substamtial portion of the digest must change
+- This is helpful in creating as many unique hashes as possible
+- Hash digest for the plain text 'Cryptography' will be completely different from the plaintext 'Cryptograph 
+```
+
+HASH COLLISION
+------------------------------------------
+```
+A hash collision occurs when there are two exact same hash values/digests resulting from two different users having the exact same password
+
+- Since there is only one hash function for each server, same passwords have same digests after hashing
+
+Hash collisions are more common than one would expect.
+```
+
+SALTING
+------------------------------------------
+```
+Salting is the process of adding a random keyword to the end of the input before it is passed on to the hash function
+
+- The random keyword added is called the 'salt value' or 'salt'
+- The salt is unique forn each user in the database and is helpful to battle hash collisions.
+```
+
+PROBLEM WITH SALTING
+------------------------------------------
+```
+Since the salt is unique for each user, they need to be stored in the database along with the passwords, and sometimes in plain text to speed up the process of continuous verification.
+
+If the server is hacked, the passwords need to be brute forced which takes a lot of time, but if they received salts as well, the entire process becomes very fast
+```
+
+PEPPERING
+------------------------------------------
+```
+Peppering is the process of adding the same random value at the end of a plaintext (input) before passing it to the hash function.
+
+- It is NOT unique per user, and so the random value need not be stored on the server
+- In the case of data breach, pepper value is safe from further exploitation
+
+Many websites use a combination of salting and peppering to solve the problem of hash collisions as well as bolster security
 ```
