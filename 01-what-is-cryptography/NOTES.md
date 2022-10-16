@@ -241,3 +241,66 @@ Peppering is the process of adding the same random value at the end of a plainte
 
 Many websites use a combination of salting and peppering to solve the problem of hash collisions as well as bolster security
 ```
+
+SYMMETRIC ENCRYPTION: AES-256
+------------------------------------------
+```
+The most widely used Symmetric Encryption algorithm today is the Advanced Encryption Standard (AES) which has a key size of 256 bit, with 128 bit and 196 bit key sizes also available.
+
+Othe primitive algorithm like:
+Data Encryption Standard (DES),
+Triple Data Encryption Standard (3DES), and
+64-bit Block Cipher (Blowfish)
+
+all have fallen out of favour with the rise of AES
+```
+
+ORIGIN OF DES
+------------------------------------------
+```
+DES is based on a feistel block cipher called Lucifer developed in 1971 by an IBM cryptography researcher, Horst Feistel. 
+
+DES was approved as a standard in November 1976, and and later reaffirmed as a standard in 1983, 1988 and finally in 1999
+
+It was eventually cracked and no longer considered secure solution. Consequently 3DES was developed.
+
+3DES:
+Triple DES is a Symmetric Key block cipher that uses a double DES block cipker - encrypt with the first key, delete encryption with the second key and encrypt again with the third key.
+
+There is also a variation of the two keys where the first and second keys are duplicate of each other.
+
+But 3DES was considered too slow for the growing need for fast communication channels and people eventually fell back to using DES.
+
+RJINDAEL ALGORITHM:
+Rjindael algorithm was introduced in 1998
+
+AES:
+It was replaced by AES in 2002
+```
+
+FEISTEL CIPHERS
+------------------------------------------
+```
+- A feistel cipher is a block cipher that is used as a structure for encryption algorithms
+- It uses substitutiion and permutation alternately
+- It is based on Shannon Structure proposed in 1945
+- Developed by Horst Feistel
+- Reversing the process can decrypt ciphertext back to plaintext
+```
+
+HOW FEISTEL CIPHERS WORK
+------------------------------------------
+```
+Encryption Process:
+- The block being encrypted is divided into two parts.
+- One part is passed onto the function, the other is XORed with the function's output. The function also uses the encryption key which differs for each individual 
+- This goes on until the last step where the left hand side and right hand side are being swapped. here we receive our final cipher text
+
+Decryption Process:
+- The entire procedure is reversed starting from the order of the keys to the block sorting
+- If the entire process is repeated in reverse order we eventually get back our plain text
+
+This simplicity helps the speed but overall it was detrimental to efficiency of the algorithm, hence security was compromised
+```
+
+
