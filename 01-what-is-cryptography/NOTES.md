@@ -150,3 +150,35 @@ ADVANTAGES OF ASYMMETRIC OVER SYMMETRIC KEY CRYPTOGRAPHY
 ```
 
 
+HASHING
+------------------------------------------
+```
+Hashing is the process of scrambling a piecce of information beyond recognition. They are designed to be irreversible. We pass the input through a hash function to calculate the 'Hash Value'. 'Hash' or 'Digest'
+```
+
+
+HASH FUNCTION
+------------------------------------------
+```
+A hash function is an algorithm that performs Mathematical operations in the main plain text.
+```
+
+REAL WORLD IMPLEMENTATION OF HASHING
+------------------------------------------
+```
+1. Password Storage:
+When a new user signs-up, the new password is passed through the hash function and the digest is stored on the server. 
+
+When the same user tries to log-in, the password they input is passed through the function again and the digest is compared to the one stored on the servers.
+
+If the re-calculated hash matches the hash stored on the servers during initial sign-up, the log-in is allowed.
+
+If the re-calculated digest is different from the one on the server, the login is denied from the website.
+
+2. Integrity Checks:
+When a file is uploaded on the internet, the file's hash value is generated and it is uploaded along with the original information.
+
+When a new user downloads the file, he can calculate the digest of the dowloaded file using the same hash function.
+
+When the hash values are compared, if they match, then fiile integrity has been maintained and theren has been no data corruption.
+```
