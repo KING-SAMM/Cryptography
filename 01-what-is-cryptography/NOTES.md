@@ -303,4 +303,25 @@ Decryption Process:
 This simplicity helps the speed but overall it was detrimental to efficiency of the algorithm, hence security was compromised
 ```
 
+AES DESIGNERS
+------------------------------------------
+```
+Joan Daemen is a Belgian cryptographer who co-designed with Vincent Rijmen the Rijndael cipher, which was selected as the Advanced Encryption Standard in 2001. More recently, he co-designed the Keccak cryptographic hash, which was selected as the new SHA-3 hash by NIST in October 2012. Wikipedia
+Place of birth: Hamont-Achel, Belgium
+h-index: 50
+Books: The Design of Rijndael: AES - The Advanced Encryption Standard
+Citations: 20,600
+Education: Katholieke Universiteit Leuven
+Research interests: Symmetric Cryptography
+
+
+Vincent Rijmen is a Belgian cryptographer and one of the two designers of the Rijndael, the Advanced Encryption Standard. Rijmen is also the co-designer of the WHIRLPOOL cryptographic hash function, and the block ciphers Anubis, KHAZAD, Square, NOEKEON and SHARK. Wikipedia
+Place of birth: Leuven, Belgium
+Books: The Design of Rijndael: AES - The Advanced Encryption Standard
+Education: Katholieke Universiteit Leuven
+h-index: 59
+Affiliation: Katholieke Universiteit, Leuven
+Research interests: Cryptology, Computer Security
+Doctoral advisor: Joos Vandewalle; René Govaerts
+```
 
